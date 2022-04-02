@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        1st Number: <input type="number" id="num1">
+        <br> <br>
+        2nd number: <input type="number" id="num2">
+        <br><br>    
+        <button onclick="Multiply()">Multiply</button>   <button onclick="division()">Divide</button>
+        <p id ="result"></p>
+    </div>
+    <script>
+
+
+
+        function Multiply(){
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            document.getElementById("result").innerHTML = "The multiplication of " + n1  +  " and " + n2 +" is "+ n1*n2;
+        }
+
+        function division(){
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            try {
+                var res = n1 / n2;
+                document.getElementById("result").innerHTML = "The division of " + n1  +  " by " + n2 +" is "+ res;
+            }
+            catch(err){
+                    document.getElementById("result").innerHTML= err.message;
+            }
+        }
+    </script>
+</body>
+</html>

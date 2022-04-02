@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+            margin: 0;
+            padding: 20px;
+            }
+
+            table {
+            border: 1px solid #000;
+            }
+
+            th,td {
+            border: solid thin;
+            padding: 0.5rem 2rem;
+            }
+</style>
+</head>
+<body>
+    <div>
+    <!-- Table tag to create table in html-->
+        <table>
+            <!--To define the caption of table caption tag is used-->
+            <caption><h2>BSC CSIT 5th sem class routine.</h2></caption>
+            <!--Defines the head part of table-->
+             <colgroup>
+                <col style="background-color:yellow">
+            </colgroup>
+           <thead>
+                <!--Defines table row -->
+                <tr>
+                    <h6>
+                        <b><!--define table header -->
+                            <th>Day</th>
+                            <th>7AM to 9AM</th>
+                            <th>9Am to 9.30AM</th>
+                            <th>9.30Am to 11.30Am</th>
+                            <th>11.30Am to 1.30Pm</th>
+                        </b>
+                    </h6>
+                </tr>
+            </thead>
+
+            <!-- Table body-->
+            <tbody>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Cryptography</td>
+                    <td rowspan='6'>Break</td>
+                    <td>Web technology</td>
+                    <td>System Analysis and Design</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Multimedia Computing</td>
+                    <td>Field Work</td>
+                    <td>No class</td>
+                    
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Cryptography</td>
+                    <td>Web technology</td>
+                    <td>System Analysis and Design</td>
+                    
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Simulation and modelling</td>
+                    <td>Design and Analysis of Algorithms</td>
+                    <td rowspan='3'>No class</td>
+                    
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Multimedia Computing</td>
+                    <td>Presentation</td>
+                    
+                    
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Simulation and modelling</td>
+                    <td>Design and Analysis of Algorithms</td>
+                    
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td colspan='4'><center>Happy  holiday</center></td>      
+                   
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Just a footer example</td>
+                </tr>
+            </tfoot>
+
+
+        </table>
+    </div>
+</body>
+</html>

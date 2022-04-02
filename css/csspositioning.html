@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css position</title>
+    <style>
+        div{
+            height: 200px;
+            width: 50%;
+        }
+
+        #static{
+            position: static;
+
+        }
+
+        #fixed{
+            position: fixed;
+            left: 300px;
+        }
+
+        #sticky{
+            position: sticky;
+            top : 0;
+        }
+
+        #relative{
+            position: relative;
+            left: 200px;
+            top: 10px;
+        }
+
+        #absolute{
+            position: absolute;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="sticky">
+        <h1>
+            Sticky
+        </h1>
+        <p >I am goona stick at top</p>
+    </div>
+
+   
+
+    <div>
+        <h1 id="static">Static</h1>
+        <p> Hi, I am static content and by default I am always static.</p>
+    </div>
+
+    <div id="fixed">
+        <h1>
+          Fixed  
+        </h1>
+        <p >My postion is fixed I do not change position.</p>
+    </div>
+
+    <div id="relative">
+        <h1>
+          Relative  
+        </h1>
+        <p >I am in relative postion</p>
+    </div>
+    
+    <div id="absolute">
+        <h1>
+            Absolute
+        </h1>
+        <p > I am in Absoulte postion</p>
+    </div>
+    
+    
+
+</body>
+</html>

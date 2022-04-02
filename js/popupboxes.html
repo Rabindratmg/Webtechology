@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display(){
+            var x = "You have clicked";
+            var d = new Date();
+            var date = d.getDate();
+            var month = d.getMonth();
+            month++;
+            var year = d.getFullYear();
+            document.getElementById("showvalue").innerHTML = date + "/" + month + "/" + year;
+        }
+    </script>
+
+    <div>
+        <p id="showvalue"></p>
+        <button onclick="display()">show Date</button>
+    </div>
+    
+</body>
+</html>

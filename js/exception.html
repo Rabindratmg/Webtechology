@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception handaling</title>
+</head>
+<body>
+    <h5>   Exception handling example</h5>
+    <script>
+        function exceptionhandling(){
+            try{
+                var a=2;
+
+                if (a==3){
+                    document.write("ok");
+                }
+                else{
+                    throw "value is not matched";
+                }
+            }
+
+            catch(e){
+                document.write("Error found : " + e + "</br>");
+            }
+
+            finally{
+                document.write("I can execute anytime");
+            }
+        }
+        exceptionhandling();
+    </script>
+    
+</body>
+</html>
